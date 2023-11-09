@@ -11,7 +11,7 @@ Information on Correlated Multivariate Monte Carlo Simulations can be found in t
 My implementation is based on information from pages 10 and 11.
 
 Monte Carlo steps <br />
-Generate standard distribution for each input factor with mean$=0$ and standard deviation$=1$ <br />
+Generate standard distribution for each input factor with mean=0 and standard deviation=1 <br />
 Take lower cholesky decomposition of correlation coefficient matrix. Multiply this by the matrix of standard distribution samples. <br />
 cholesky matrix = L, random samples matrix = S,     $LS = A$ where A is our new correlated samples. <br />
 Then we take the mean and standard distribution for each input factor and preform these operations to make our data meaningful in the context of the problem as follows: <br/>
